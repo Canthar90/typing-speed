@@ -120,7 +120,7 @@ class MyWidget(QtWidgets.QWidget):
         if self.inputer.text() == self.generated_word:
             self.stop_time = time.time()
             typing_time = self.stop_time - self.start_time
-            self.descriprion.setText(f"Your typing time was {typing_time}")
+            self.descriprion.setText(f"Your typing time was {round(typing_time, 4)} s")
         else:
             self.descriprion.setText("Sory sentence you typed was Invalid Try again")
         print('enter')
